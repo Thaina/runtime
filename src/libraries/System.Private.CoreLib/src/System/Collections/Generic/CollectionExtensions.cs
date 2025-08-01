@@ -12,7 +12,7 @@ namespace System.Collections.Generic
         {
             if (dictionary is null)
                 ThrowHelper.ThrowArgumentNullException(ExceptionArgument.dictionary);
-            
+
             if (dictionary.TryGetValue(key, out var value))
                 return value;
 
